@@ -1,0 +1,15 @@
+
+
+
+
+
+class Dog:
+    def __init__(self, name: str, age: int, legs: int, tail: bool):
+        self.name = name
+        self.tail = tail
+        self.legs = 4
+
+  def horrible_accident(self):
+    if self.legs > 0:
+        self.legs -= 1
+        return f'Oh no! {self.name} had a horrible accident and now has {self.legs} legs.'
