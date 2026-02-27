@@ -10,9 +10,7 @@ class Movie:
     def get_info(self):
         ending = "Good Ending" if self.good_ending else "Bad Ending"
         return f"{self.title} ({self.year}), {ending}"
-# Method to get formatted information about the movie.
-
-
+# Method to get formatted information about the movie
 if __name__ == '__main__':
     inception = Movie("Inception", good_ending=True, year=2010)
     print(inception.get_info())
